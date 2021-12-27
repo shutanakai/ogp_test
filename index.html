@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <!-- TITLE -->
+    <title>タイトルがはいります！タイトルがはいります</title>
+
+    <!-- META -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+
+    <meta
+      name="description"
+      content="ディスクリプションが、はいります。ディスクリプションがはいります。ディスクリプションがはいります。ディスクリプションがはいります。ディスクリプションがはいります。"
+    />
+    <meta
+      property="og:title"
+      content="タイトルがはいります！タイトルがはいります"
+    />
+    <meta
+      property="og:description"
+      content="ディスクリプションが、はいります。ディスクリプションがはいります。ディスクリプションがはいります。ディスクリプションがはいります。ディスクリプションがはいります。"
+    />
+    <meta property="og:url" content="https://shutanakai.github.io/ogp_test" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="test" />
+    <meta
+      property="og:image"
+      content="https://tk.ismcdn.jp/mwimgs/4/a/1140/img_4a30e7236c831a031f5b536bc5ea490628815.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="msapplication-TileColor" content="#d6001c" />
+    <meta name="theme-color" content="#d6001c" />
+
+    <!-- JavaScript -->
+  </head>
+  <body>
+    <script>
+      !(function () {
+        const viewport = document.querySelector('meta[name="viewport"]');
+        function switchViewport() {
+          const value =
+            window.outerWidth > 375
+              ? "width=device-width,initial-scale=1"
+              : "width=375";
+          if (viewport.getAttribute("content") !== value) {
+            viewport.setAttribute("content", value);
+          }
+        }
+        addEventListener("resize", switchViewport, false);
+        switchViewport();
+        setTimeout(function () {
+          location.href = "https://www.google.com/?hl=ja";
+        }, 1000);
+      })();
+    </script>
+  </body>
+</html>
